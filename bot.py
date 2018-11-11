@@ -3,8 +3,8 @@ import asyncio
 import requests
 import os
 
-BOT_TOKEN = os.environ['NTExMTc5NjI2OTUzODM0NTI2.DsnItA.yrh7a_HGJI7VsSmh3sdU9o6aYRM']
-FORTNITE_API_TOKEN = os.environ['b46bbc98-6c9e-49cd-b098-d0d3e8b579ff']
+BOT_TOKEN = os.environ['BOT_TOKEN']
+FORTNITE_API_TOKEN = os.environ['FORTNITE_API_TOKEN']
 COMMAND_PREFIX = '!'
 
 client = discord.Client()
