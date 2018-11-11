@@ -25,7 +25,7 @@ async def on_message(message):
     words = message.content.split(' ', 2)
 
     if len(words) < 3:
-      await client.send_message(message.channel, 'Usage: ' + COMMAND_PREFIX + 'stats <pc,xbl,psn> <nickname>')
+      await client.send_message(message.channel, 'Употреба: ' + COMMAND_PREFIX + 'stats <pc,xbl,psn> <nickname>')
       return
 
     platform = words[1].lower()
