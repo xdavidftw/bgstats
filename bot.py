@@ -37,7 +37,7 @@ async def on_message(message):
       platform = 'psn'
 
     if platform not in ('pc','xbl','psn'):
-      await client.send_message(message.channel, 'Usage: ' + COMMAND_PREFIX + 'stats <pc,xbl,psn> <nickname>')
+      await client.send_message(message.channel, 'Употреба: ' + COMMAND_PREFIX + 'stats <pc,xbl,psn> <nickname>')
       return
     else:
       res = fortnite_tracker_api(platform,words[2])
@@ -58,7 +58,7 @@ async def on_message(message):
         embed.add_field(name="K/D", value=kd + '\n', inline=False)
         await client.send_message(message.channel, embed=embed)
       else:
-        await client.send_message(message.channel, 'Failed to get data. Double check spelling of your nickname.')
+        await client.send_message(message.channel, 'Данните не можаха да бъдат получени. Проверете двукратно изписването на псевдонима си.')
 
 def fortnite_tracker_api(platform, nickname):
   URL = 'https://api.fortnitetracker.com/v1/profile/' + platform + '/' + nickname
