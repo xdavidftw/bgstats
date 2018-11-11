@@ -49,7 +49,7 @@ async def on_message(message):
         kills = res[3]['value']
         kd = res[4]['value']
 
-        embed = discord.Embed(title="Lifetime Stats за " + words[2], color=D48D22)
+        embed = discord.Embed(title="Lifetime Stats за " + words[2], color=0x00ff00)
 
         embed.add_field(name="Изиграни Мачове", value=matches_played + '\n', inline=False)
         embed.add_field(name="Победи", value=wins + '\n', inline=False)
