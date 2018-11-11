@@ -49,12 +49,12 @@ async def on_message(message):
         kills = res[3]['value']
         kd = res[4]['value']
 
-        embed = discord.Embed(title="Lifetime Stats for " + words[2], color=0x00ff00)
+        embed = discord.Embed(title="Lifetime Stats за " + words[2], color=D48D22)
 
-        embed.add_field(name="Matches Played", value=matches_played + '\n', inline=False)
-        embed.add_field(name="Wins", value=wins + '\n', inline=False)
-        embed.add_field(name="Win percent", value=win_percent + '\n', inline=False)
-        embed.add_field(name="Kills", value=kills + '\n', inline=False)
+        embed.add_field(name="Изиграни Мачове", value=matches_played + '\n', inline=False)
+        embed.add_field(name="Победи", value=wins + '\n', inline=False)
+        embed.add_field(name="Win %", value=win_percent + '\n', inline=False)
+        embed.add_field(name="Убийства", value=kills + '\n', inline=False)
         embed.add_field(name="K/D", value=kd + '\n', inline=False)
         await client.send_message(message.channel, embed=embed)
       else:
